@@ -162,7 +162,7 @@ some():存在一项返回true就返回true。
 
 上个实例，就是在写node的时候对遍历的对象进行路由的注册。
 
-   ![图片](./img/foreach.png)
+   ![图片](./img/foreach.PNG)
 
 ### 归并方法
 #### reduce()   
