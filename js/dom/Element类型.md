@@ -66,7 +66,8 @@ className:与元素的class特性对应。
 > 特性的用途是给出相应元素或者其内容的附加信息。
 
 ##### a.getAttribute()方法  
-接收一个参数，就是特性的名字。
+接收一个参数，就是特性的名字。可以获取该特性的值。  
+特性的名字大小写不敏感。
 
       var div = document.getElementById('myDiv');
       div.getAttribute('id');  //'myDiv'
@@ -75,5 +76,24 @@ className:与元素的class特性对应。
 ![](./img/getAttribute.PNG)        
 
 ##### b.setAttribute()方法    
+接收两个参数，第一个是特性的名字，第二个是特性改的值。如果特性的值已经存在的话，就覆盖掉旧的值。  
+上代码:
+    
+       var div = document.getElementById("myDiv");
+       div.setAttribute("id","SomeOtherid");
+       div.setAttribute("data-myattribute","special");
+设置的特性，**默认**转为小写形式。
+#### c.removeAttribute()方法
+接收一个参数，可以将特性和它的值一起删掉
 
+![](./img/texingyushuxingPNG.PNG)
 
+### 5.attribute属性（少用，Element唯一一个DOM节点实现）
+其值为一个动态的对象NameNodeMap，保存每个节点。其中每个结点都有每个人的基本信息都在这里。  
+方法:  
+- 
+- getNamedItem(name) //返回nodeName属性的name的点  
+- removeNameItem(name) //可以从列表中移除节点和节点的搭配  
+- setNamedItem(name) //列表中添加节点，节点的nodename为例子  
+- item(pos)
+     
