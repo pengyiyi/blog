@@ -120,7 +120,8 @@ document.links:包含文档中带有href属性的`<a>`元素
          <body>
            <script>
               document.write("<script type=\"text/javascript\" src=\"file.js\">+
-           <\/script>")//需要转义，否则和前面一个script标签进行匹配就会导致错误
+           <\/script>")
+       //需要转义，否则和前面一个script标签进行匹配就会导致错误
            </script>
          </body>
          </html>  
